@@ -1,5 +1,6 @@
 <script>
 	import Nav from '../components/Nav.svelte';
+	import Header from "../components/Header.svelte";
 	import Main from '../components/Main.svelte';
 
 	export let segment;
@@ -15,6 +16,8 @@
 		box-sizing: border-box;
 	}
 </style> -->
+
+<Header></Header>
 
 <Nav {segment}/>
 
