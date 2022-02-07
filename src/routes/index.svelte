@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import successkid from 'images/successkid.jpg';
 </script>
 
@@ -42,4 +42,4 @@
 
 <div class="Home">
 	BlogPost
-</div>
+</div> -->

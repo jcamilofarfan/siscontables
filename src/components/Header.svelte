@@ -11,13 +11,13 @@
     .Header-container{
         display: grid;
         grid-template-columns: minmax(auto, 1024px);
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
     .Header-content{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .Header h1{
