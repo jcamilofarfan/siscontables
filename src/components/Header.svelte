@@ -1,3 +1,6 @@
+<script>
+    import analyticsTracking from "../utils/analytics";
+</script>
 <style>
     .Header{
         background-color: #fafbfc;
@@ -74,22 +77,22 @@
             <div class="Header-social">
                 <ul>
                     <li>
-                        <a href="https://github.com/jcamilofarfan" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/jcamilofarfan" target="_blank" rel="noreferrer" on:click={analyticsTracking('github')}>
                             <img src="github.png" alt="GitHub">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/jcamilofarfan/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/jcamilofarfan/" target="_blank" rel="noreferrer"on:click={analyticsTracking('linkedin')}>
                             <img src="linkedin.png" alt="LinkedIn">
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/jcamilofarfan" target="_blank" rel="noreferrer">
+                        <a href="https://twitter.com/jcamilofarfan" target="_blank" rel="noreferrer" on:click={analyticsTracking('twitter')}>
                             <img src="twitter.png" alt="Twitter">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/jcamilofarfan/" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/jcamilofarfan/" target="_blank" rel="noreferrer" on:click={analyticsTracking('instagram')}>
                             <img src="instagram.png" alt="Instagram">
                         </a>
                     </li>
