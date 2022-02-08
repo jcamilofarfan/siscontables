@@ -55,7 +55,9 @@
         <div class="Post-head">
             <div class="Post-title">
                 <h2>
-                    <a rel="prefetch" href="blog/{post.slug}">{randomEmoji()} {post.title}</a>
+                    <a rel="prefetch" href="blog/{post.slug}">
+                        <!-- {randomEmoji()}  -->
+                        {post.title}</a>
                 </h2>
                 <p>
                     <time datetime="{post.createdAt}">
@@ -63,7 +65,7 @@
                             post.createdAt
                         )}
                         </time>
-                    <span class="dot"></span>
+                    <span class="dot">-</span>
                     <span>
                         {readingTime(post.html)}
                     </span>
