@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="About">
-  <h1>About this site</h1>
+  <h1>About @jcamilofarfan</h1>
   <p>
     Hola Mi nombre es Juan Camilo, soy desarrollador de software y contador
     publico Tengo conocimientos en lenguajes de programación como JavaScript y
