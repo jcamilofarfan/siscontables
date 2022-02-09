@@ -14,9 +14,23 @@
 </script>
 
 <script>
+	import {onMount} from "svelte"
 	import readingTime from "../../utils/readingTime";
 	import formatIsoTime from "../../utils/formatIsoTime"
 	export let post;
+
+	const disquis = () =>{
+		if(document.readyState === 'complete'){
+			let d = document, s = d.createElement('script');
+			s.src = 'https://siscontables-dev.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		}
+	};
+
+	onMount (async () =>{
+		await disquis();
+	})
 </script>
 
 <style>
@@ -26,7 +40,7 @@
 		margin: 0;
 		padding: 0;
 	}
-	.Post-title{
+	p {
 		color: #555;
 		font-size: 14px;
 		font-weight: 300;
@@ -60,7 +74,11 @@
 		</span>
 	</p>
 	<div class="content">
+		<br>
 		{@html post.html}
+		
 	</div>
-	<div class="comments" />
+	<div class="comments">
+		<div id="disqus_thread"></div>
+	</div>
 </div>
