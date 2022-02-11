@@ -74,7 +74,9 @@
         </div>
         <div class="Post-tags" />
         <div class="Post-desc">
-            <p>{post.desc}</p>
+            <p>
+                {@html post.desc}
+            </p>
         </div>
     </div>
 </div>

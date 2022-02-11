@@ -6,12 +6,13 @@
     "dev": "sapper dev",
     "build": "sapper build",
     "export": "sapper export",
-    "start": "node __sapper__/build"
+    "start": "node __sapper__/build",
+    "data": "node src/bin/index.js"
   },
   "dependencies": {
     "compression": "^1.7.1",
     "dotenv": "^16.0.0",
-    "node-fetch": "^3.2.0",
+    "node-fetch": "2.6.0",
     "polka": "next",
     "sirv": "^1.0.0"
   },
