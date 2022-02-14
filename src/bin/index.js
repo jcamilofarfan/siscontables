@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 const fd = require('fs');
-let postsObj = require('../routes/blog/_post.json');
+// let postsObj = require('../routes/blog/_post.json');
 require('dotenv').config();
 
 const APIPOST = process.env.API_WORDPRESS_POSTS;
@@ -10,12 +10,10 @@ let tagsDB = [];
 const writeFilePosts = (obj)=>{
     const parseData = JSON.stringify(obj);
     fd.writeFileSync('./src/routes/blog/_post.json', parseData);
-    console.log('File written successfully');
 }
 const writeFileTags = (obj)=>{
     const parseData = JSON.stringify(obj);
-    fd.writeFileSync('./src/routes/blog/_tags.json', parseData);
-    console.log('File written successfully');
+    fd.writeFileSync('./src/routes/tags/_tags.json', parseData);
 }
 const fetchDataPosts = async() => {
     const response = await fetch(APIPOST);
@@ -28,7 +26,9 @@ const fetchDataPosts = async() => {
             "createdAt": post.date,
             "id": post.id,
             "desc": post.excerpt.rendered,
-            "tags": getTagsId(post.tags)
+            "tags": getTagsId(post.tags),
+            "image": post.yoast_head_json.og_image[0].url
+
         }
     });
     writeFilePosts(posts)
@@ -60,7 +60,8 @@ const fetchDataTags = async() => {
             "name": tag.name,
             "slug": tag.slug,
             "desc": tag.description,
-            "count": tag.count
+            "count": tag.count,
+            "image": tag.yoast_head_json.og_image[0].url
         }
     });
     tagsDB = tags;
@@ -71,6 +72,7 @@ const fetchDataTags = async() => {
 const fetchData = async() => {
     fetchDataTags();
     fetchDataPosts();
+    console.log('File written successfully');
 }
 
 fetchData();

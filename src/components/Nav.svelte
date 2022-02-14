@@ -71,10 +71,10 @@
     <div class="Nav-content">
       <div class="Nav-social">
         <ul>
-          <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
+          <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
+          <li><a aria-current="{segment === 'tags' ? 'page' : undefined}" href="tags">Tags</a></li>
           <li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
           <li><a aria-current="{segment === 'contact' ? 'page': undefined}" href="contact">contact</a></li>
-          <li><a aria-current="{segment === 'general' ? 'page': undefined}" href="general">general</a></li>
           <li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
         </ul>
       </div>

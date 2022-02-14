@@ -4,41 +4,47 @@
         "name": "Contabilidad",
         "slug": "contabilidad",
         "desc": "La contabilidad es una disciplina que se encarga de estudiar, medir y analizar el patrimonio y la situación económica financiera de una empresa u organización, con el fin de facilitar la toma de decisiones",
-        "count": 0
+        "count": 0,
+        "image": "https://contador.tech/wp-content/uploads/2021/06/contabilidad.png"
     },
     {
         "id": 11,
         "name": "Criptomoneda",
         "slug": "criptomoneda",
         "desc": "<div class=\"wDYxhc\" lang=\"es-419\" data-md=\"50\" data-hveid=\"CD8QAA\" data-ved=\"2ahUKEwi7ve_EnqLxAhV3M1kFHVevBDoQkCkwMHoECD8QAA\">\r\n<div class=\"PZPZlf hb8SAc\" data-attrid=\"description\" data-hveid=\"CD8QAQ\" data-ved=\"2ahUKEwi7ve_EnqLxAhV3M1kFHVevBDoQziAoADAwegQIPxAB\">\r\n<div class=\"kno-rdesc\"><span style=\"font-family: var(--wp--custom--font-primary)\">Una criptomoneda, criptodivisa o criptoactivo es un medio digital de intercambio que utiliza criptografía fuerte para asegurar las transacciones, controlar la creación de unidades adicionales y verificar la transferencia de activos usando tecnologías de registro distribuido.​​​.</span></div>\r\n</div>\r\n</div>",
-        "count": 1
+        "count": 1,
+        "image": "https://contador.tech/wp-content/uploads/2021/06/img-bitcoin.png"
     },
     {
         "id": 3,
         "name": "Excel",
         "slug": "excel",
         "desc": "Microsoft Excel es una hoja de cálculo desarrollada por Microsoft para Windows, macOS, Android e iOS. Cuenta con cálculo, herramientas gráficas, tablas calculares y un lenguaje de programación macro llamado Visual Basic para aplicaciones.",
-        "count": 0
+        "count": 0,
+        "image": "https://contador.tech/wp-content/uploads/2021/06/excel.png"
     },
     {
         "id": 12,
         "name": "Impuestos",
         "slug": "impuestos",
         "desc": "El impuesto es una clase de tributo regido por derecho público, que se caracteriza por no requerir una contraprestación directa o determinada por parte de la administración hacendaria",
-        "count": 1
+        "count": 1,
+        "image": "https://contador.tech/wp-content/uploads/2021/06/img-impuestos.png"
     },
     {
         "id": 2,
         "name": "Nomina",
         "slug": "nomina",
         "desc": "La nómina​ es la suma de los registros financieros de los sueldos de los empleados, incluyendo los salarios, las bonificaciones y las deducciones. En la contabilidad, la nómina se refiere a la cantidad pagada a los empleados por los servicios que prestaron durante un cierto período de tiempo",
-        "count": 0
+        "count": 0,
+        "image": "https://contador.tech/wp-content/uploads/2021/06/img.nomina.png"
     },
     {
         "id": 9,
         "name": "Sistemas Contables",
         "slug": "sistemas-contables",
         "desc": "Sección Principal donde iré documentando el proceso del Blog y la estrategia que estoy presentando, veremos las herramientas creadas en el proceso de Sistemas Contables",
-        "count": 1
+        "count": 1,
+        "image": "https://contador.tech/wp-content/uploads/2021/12/2.png"
     }
 ]
