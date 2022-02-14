@@ -5,17 +5,61 @@ require('dotenv').config();
 
 const APIPOST = process.env.API_WORDPRESS_POSTS;
 const APITAGS = process.env.API_WORDPRESS_TAGS;
+
+const blogTitle = process.env.BLOG_TITLE
+const blogUrl = process.env.BLOG_URL
+const blogCover = process.env.BLOG_COVER
+const blogDesc = process.env.BLOG_DESC
+const blogAuthor = process.env.BLOG_AUTHOR
+const blogFavicon = process.env.BLOG_FAVICON
+
 let tagsDB = [];
 
-const writeFilePosts = (obj)=>{
+const createRss = async () => {
+    const template = `<?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0">
+    
+    <channel>
+        <title>
+            <![CDATA[${blogTitle}]]>
+        </title>
+        <description>
+            <![CDATA[${blogDesc}]]>
+        </description>
+        <image>
+            <url>
+                ${blogFavicon}
+            </url>
+            <title>
+                <![CDATA[${blogTitle}]]>
+            </title>
+            <link>
+                ${blogUrl}
+            </link>
+        </image>
+        <generator>
+            Jcamilofarfan
+        </generator>
+        <latBuildDate>
+
+        </latBuildDate>
+        <atom:link href="${blogUrl}/rss.xml" rel="selft" type="application/rss+xml" />
+        <ttl>60</ttl>
+
+    </channel>
+    
+    </rss>`
+}
+
+const writeFilePosts = (obj) => {
     const parseData = JSON.stringify(obj);
     fd.writeFileSync('./src/routes/blog/_post.json', parseData);
 }
-const writeFileTags = (obj)=>{
+const writeFileTags = (obj) => {
     const parseData = JSON.stringify(obj);
     fd.writeFileSync('./src/routes/tags/_tags.json', parseData);
 }
-const fetchDataPosts = async() => {
+const fetchDataPosts = async () => {
     const response = await fetch(APIPOST);
     const data = await response.json();
     const posts = await data.map(post => {
@@ -50,8 +94,7 @@ const getTagsId = (tags) => {
     return tagsId;
 }
 
-
-const fetchDataTags = async() => {
+const fetchDataTags = async () => {
     const response = await fetch(APITAGS);
     const data = await response.json();
     const tags = await data.map(tag => {
@@ -69,7 +112,7 @@ const fetchDataTags = async() => {
 }
 
 
-const fetchData = async() => {
+const fetchData = async () => {
     fetchDataTags();
     fetchDataPosts();
     console.log('File written successfully');
