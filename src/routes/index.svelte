@@ -30,11 +30,12 @@
 	<meta name="twitter:creator" content="@jcamilofarfan"/>
 	<meta name="twitter:title" content="Jcamilofarfan"/>
 	<meta name="twitter:description" content="Blog Jcamilofarfan, software Developer and public Accountant"/>
-	<meta name="twitter:image" content="https://contador.tech/wp-content/uploads/2021/12/Logo-Google-WorkSpace.png"/>
+	<meta name="twitter:image" content="https://contador.tech/wp-content/uploads/2021/12/Portada-Sistemas-Contables.png"/>
 	
 	<meta property="og:title" content="Jcamilofarfan"/>
 	<meta property="og:description" content="Blog Jcamilofarfan, software Developer and public Accountant"/>
-	<meta property="og:image" content="https://contador.tech/wp-content/uploads/2021/12/Logo-Google-WorkSpace.png"/>
+	<meta property="og:image" content="https://contador.tech/wp-content/uploads/2021/12/Portada-Sistemas-Contables.png"/>
+	<meta property="og:image:alt" content="Jcamilofarfan"/>
 	<meta property="og:url" content="https://blog.siscontables.dev/"/>
 	<meta property="og:site_name" content="Jcamilofarfan"/>
 	<meta property="og:locale" content="es_ES"/>
