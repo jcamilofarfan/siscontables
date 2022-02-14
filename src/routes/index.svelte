@@ -39,8 +39,8 @@
 	<meta property="og:site_name" content="Jcamilofarfan"/>
 	<meta property="og:locale" content="es_ES"/>
 	<meta property="og:type" content="article"/>
-	<meta property="fb:app_id" content=""/>
-	
+	<meta property="fb:app_id" content="1085117785665000"/>
+
 </svelte:head>
 
 <div class="Home">
