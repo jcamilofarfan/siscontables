@@ -162,8 +162,6 @@ const getTagsId = (tags) => {
             )
         }
     )
-    // agregar elemento a tagsId
-    tagsId.push('blog');
     return tagsId;
 }
 

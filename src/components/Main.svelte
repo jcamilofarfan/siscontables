@@ -16,6 +16,17 @@
         grid-gap: 60px;
         justify-content: space-between;
     }
+    /* add responsive */
+    @media screen and (max-width: 1024px){
+        .Main-container{
+            width: 80%;
+            margin: auto;
+        }
+        .Main-content{
+            grid-template-columns: 1fr;
+            
+        }
+    }
 
 </style>
 

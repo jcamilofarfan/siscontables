@@ -64,6 +64,13 @@
         /* height: 20px;
         margin: 0 0.5em 0 0; */
     }
+    /* add responsive */
+    @media screen and (max-width: 1024px){
+        .Header{
+            width: 80%;
+            margin: auto;
+        }
+    }
 
 </style>
 

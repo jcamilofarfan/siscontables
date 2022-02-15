@@ -64,6 +64,12 @@
   a:hover {
     color: rgba(25, 26, 34, 1);
   }
+  @media screen and (max-width: 1024px){
+        .Nav-container{
+            width: 80%;
+            margin: auto;
+        }
+    }
 </style>
 
 <nav class="Nav">

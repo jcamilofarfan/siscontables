@@ -28,6 +28,16 @@
     .Footer-svelte img{
         margin: 8 0 0 0.5em;
     }
+    /* responsive */
+    @media screen and (max-width: 1024px) {
+        .Footer-content{
+            display: grid;
+            grid-template-rows: 1fr;
+            justify-content: space-around;
+            width: 80%;
+            margin: auto;
+        }
+    }
 
 </style>
 <footer class="Footer">

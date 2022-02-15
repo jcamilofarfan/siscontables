@@ -18,6 +18,9 @@
 	import readingTime from "../../utils/readingTime";
 	import formatIsoTime from "../../utils/formatIsoTime"
 	export let post;
+	post.tags = post.tags.map(tag =>{
+		return tag.toLowerCase().replace(/\s/g, "-")
+	})
 
 	const disquis = () =>{
 		if(document.readyState === 'complete'){
@@ -49,7 +52,31 @@
 	}
 	.comments{
 		margin: 2em 0 0 0;
-
+	}
+	.Post-tags{
+		display: flex;
+		grid-gap: 8px;
+		padding: 16px 0 48px 16px;
+		margin: 0 -16px;
+		max-width: 100%;
+		flex-wrap: wrap;
+	}
+	.Post-tags a{
+		text-decoration: none;
+        align-items: center;
+        background: #fff;
+        border-radius: 26px;
+        border: 2px solid #eee;
+        color: #111;
+        display: flex;
+        height: 55px;
+        font-size: 1.3rem;
+        padding: 0 24px;
+        position: relative;
+        transition: all .3s ease;
+	}
+	.Post-tags a:hover{
+		border: 2px solid #09f;
 	}
 </style>
 
@@ -73,6 +100,14 @@
 			{readingTime(post.html)}
 		</span>
 	</p>
+
+	<div class="Post-tags">
+		<span>Tags: </span>
+		{#each post.tags as tag}
+			<a href="tags/{tag}"> {tag.charAt(0).toUpperCase() + tag.slice(1)} </a>
+		{/each}
+	</div>
+
 	<div class="content">
 		<br>
 		{@html post.html}
