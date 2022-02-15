@@ -12,6 +12,8 @@
       action="contact/"
       method="POST"
       data-netlify="true"
+      data-netlify-recaptcha="true"
+      netlify-honeypot="bot-field"
       id="form-contact"
     >
       <input type="hidden" name="form-name" value="contact" />
