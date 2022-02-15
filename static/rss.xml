@@ -22,7 +22,7 @@
             Jcamilofarfan
         </generator>
         <latBuildDate>
-            Tue, 15 Feb 2022 13:17:53 GMT
+            Tue, 15 Feb 2022 14:02:24 GMT
         </latBuildDate>
         <atom10:link
             xmlns:atom10="https://blog.siscontables.dev/rss.xml"
@@ -43,7 +43,7 @@
 ]]>
                 </description>
                 <category>
-                    <![CDATA[Impuestos]]>
+                    <![CDATA[]]>
                 </category>
                 <pubDate>
                     Fri, 25 Jun 2021 11:00:00 GMT
@@ -133,7 +133,7 @@
 ]]>
                 </description>
                 <category>
-                    <![CDATA[Criptomoneda]]>
+                    <![CDATA[]]>
                 </category>
                 <pubDate>
                     Sat, 19 Jun 2021 03:38:39 GMT
@@ -146,7 +146,7 @@
 
 
 
-<figure class="wp-block-image size-large"><a href="https://twitter.com/AsambleaSV/status/1402514537648164866?s=20"><img loading="lazy" width="586" height="397" src="https://contador.tech/wp-content/uploads/2021/06/Tweet-ElSalvador.png" alt="Aviso Asamblea Legislativa" class="wp-image-568" srcset="https://contador.tech/wp-content/uploads/2021/06/Tweet-ElSalvador.png 586w, https://contador.tech/wp-content/uploads/2021/06/Tweet-ElSalvador-300x203.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></a></figure>
+<figure class="wp-block-image size-thumbnail is-resized"><a href="https://twitter.com/AsambleaSV/status/1402514537648164866?s=20"><img loading="lazy" src="https://contador.tech/wp-content/uploads/2021/06/Tweet-ElSalvador-150x150.png" alt="Aviso Asamblea Legislativa" class="wp-image-568" width="113" height="113"/></a></figure>
 
 
 
@@ -154,7 +154,7 @@
 
 
 
-<h3>Que es el bitcoin</h3>
+<h3 id="que-es-el-bitcoin">Que es el bitcoin</h3>
 
 
 
@@ -170,7 +170,7 @@
 
 
 
-<h3>Como se genera</h3>
+<h3 id="como-se-genera">Como se genera</h3>
 
 
 
@@ -194,7 +194,7 @@
 
 
 
-<h3>Alguien regula</h3>
+<h3 id="alguien-regula">Alguien regula</h3>
 
 
 
@@ -202,7 +202,7 @@
 
 
 
-<h3>Bitcoin en el Salvador </h3>
+<h3 id="bitcoin-en-el-salvador">Bitcoin en el Salvador </h3>
 
 
 
@@ -214,7 +214,7 @@
 
 
 
-<h3>Consecuencias</h3>
+<h3 id="consecuencias">Consecuencias</h3>
 
 
 
@@ -222,7 +222,7 @@
 
 
 
-<h3>Beneficia</h3>
+<h3 id="beneficia">Beneficia</h3>
 
 
 
@@ -230,7 +230,7 @@
 
 
 
-<h3>Contras</h3>
+<h3 id="contras">Contras</h3>
 
 
 
@@ -238,7 +238,7 @@
 
 
 
-<h3>¿Y Ahora que viene?</h3>
+<h3 id="y-ahora-que-viene">¿Y Ahora que viene?</h3>
 
 
 
@@ -263,7 +263,7 @@
 ]]>
                 </description>
                 <category>
-                    <![CDATA[Sistemas Contables]]>
+                    <![CDATA[]]>
                 </category>
                 <pubDate>
                     Sun, 13 Jun 2021 04:57:09 GMT
