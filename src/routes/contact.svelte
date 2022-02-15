@@ -57,7 +57,7 @@
 <div class="Contact">
     <h2 class="Contact-title">Contacto</h2>
     <div class="Contact-form">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" id="form-contact">
             <input type="hidden" name="form-name" value="contact">
             <p>
             <label>Nombre: <input type="text" name="name" /></label>
@@ -74,3 +74,5 @@
         </form>
     </div>
 </div>
+
+<script src="../utils/form.js"></script>
