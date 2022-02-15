@@ -4,7 +4,7 @@
 <style>
     .Header{
         background-color: #fafbfc;
-        color: white;
+        /* color: white; */
         padding: 1em 0 0 0;
         font-size: 20px;
         font-family: 'Roboto', sans-serif;
@@ -31,7 +31,8 @@
         cursor: pointer;
     }
 
-    Header h1 span{
+    .Header h1 span{
+        color: #191a22;
         display: block;
         font-size: 13px;
         font-weight: 300;
@@ -54,15 +55,15 @@
         text-decoration: none;
         font-weight: 300;
         font-size: 14px;
-        /* color: white;
+        color: white;
         letter-spacing: normal;
-        cursor: pointer; */
+        cursor: pointer;
     }
 
     .Header-social img {
         width: 20px;
-        /* height: 20px;
-        margin: 0 0.5em 0 0; */
+        height: 20px;
+        margin: 0 0.5em 0 0;
     }
     /* add responsive */
     @media screen and (max-width: 1024px){
