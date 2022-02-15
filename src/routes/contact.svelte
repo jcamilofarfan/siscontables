@@ -9,7 +9,6 @@
   <div class="Contact-form">
     <form
       name="contact"
-      netlify-honeypot="bot-field"
       action="contact/"
       method="POST"
       data-netlify="true"
