@@ -91,14 +91,39 @@ const createRss = async (data) => {
     return template;
 }
 
+const createSiteMap = async (data) => {
+    const parseItems = await data.map(item=>{
+        return`
+            <url>
+                <loc>${blogUrl}blog/${item.slug}</loc>
+                <lastmod>${getDate(item.createdAt)}</lastmod>
+                <priority>0.80</priority>
+            </url>
+        `
+    }).join('');
+    const template =`<?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            <url>
+                <loc>${blogUrl}</loc>
+                <lastmod>${getDate()}</lastmod>
+                <priority>1.0</priority>
+            </url>
+            ${parseItems}
+        </urlset>
+    `
+    return template
+}
+
 const writeFilePosts = async (obj) => {
     const parseData = JSON.stringify(obj);
     const rss = await createRss(obj);
+    const siteMap = await createSiteMap(obj);
     fd.writeFileSync('./src/routes/blog/_post.json', parseData);
     console.log('Updated posts successfully');
     fd.writeFileSync('./static/rss.xml', rss);
     console.log('Update RSS file');
-
+    fd.writeFileSync('./static/sitemap.xml', siteMap);
+    console.log('Update SiteMap file');
 }
 const writeFileTags = (obj) => {
     const parseData = JSON.stringify(obj);
