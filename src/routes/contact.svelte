@@ -9,6 +9,7 @@
   <div class="Contact-form">
     <form
       name="contact"
+      netlify-honeypot="bot-field"
       action="contact/"
       method="POST"
       data-netlify="true"
@@ -24,6 +25,7 @@
       <p>
         <label>Mensaje: <textarea name="message" /></label>
       </p>
+      <div data-netlify-recaptcha="true"></div>
       <p>
         <button type="submit">✍️ Enviar</button>
       </p>
