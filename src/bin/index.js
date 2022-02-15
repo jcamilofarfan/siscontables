@@ -133,49 +133,41 @@ const writeFileTags = (obj) => {
 const fetchDataPosts = async () => {
     const response = await fetch(APIPOST);
     const data = await response.json();
-    const posts = await data.map(post => {
+    const posts = await data.posts.map(post => {
         return {
-            "title": post.title.rendered,
-            "html": post.content.rendered,
+            "title": post.title,
+            "html": post.html,
             "slug": post.slug,
-            "createdAt": post.date,
+            "createdAt": post.created_at,
             "id": post.id,
-            "desc": post.excerpt.rendered,
+            "desc": post.excerpt,
             "tags": getTagsId(post.tags),
-            "image": post.yoast_head_json.og_image[0].url
-
+            "image": post.feature_image
         }
     });
     writeFilePosts(posts)
 }
 // buscar nombre de tags por id
 const getTagsId = (tags) => {
-    let tagsId = [];
-    tagsDB.map(
-        tag => {
-            tags.map(
-                tagId => {
-                    if (tag.id === tagId) {
-                        tagsId.push(tag.name);
-                    }
-                }
-            )
-        }
-    )
-    return tagsId;
+    let tagsName = [];
+    tags.map(tag => {
+        tagsName.push(
+            tag.name
+        )
+    })
+    return tagsName;
 }
 
 const fetchDataTags = async () => {
     const response = await fetch(APITAGS);
     const data = await response.json();
-    const tags = await data.map(tag => {
+    const tags = await data.tags.map(tag => {
         return {
             "id": tag.id,
             "name": tag.name,
             "slug": tag.slug,
             "desc": tag.description,
-            "count": tag.count,
-            "image": tag.yoast_head_json.og_image[0].url
+            "image": tag.feature_image
         }
     });
     tagsDB = tags;
