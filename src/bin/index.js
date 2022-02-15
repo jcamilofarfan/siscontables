@@ -15,10 +15,46 @@ const blogFavicon = process.env.BLOG_FAVICON
 
 let tagsDB = [];
 
-const createRss = async () => {
+const getDate= (date) => {
+    if(date){
+        return new Date(date).toUTCString()
+    }else{
+        return new Date().toUTCString()
+    }
+}
+
+
+const createRss = async (data) => {
+    const parseItems = await data.map(item=>{
+        const pubDate = getDate(item.createdAt);
+        return `
+            <item>
+                <title>
+                    <![CDATA[${item.title}]]>
+                </title>
+                <link>
+                    ${blogUrl}blog/${item.slug}
+                </link>
+                <description>
+                    <![CDATA[${item.desc}]]>
+                </description>
+                <category>
+                    <![CDATA[${item.tags.join()}]]>
+                </category>
+                <pubDate>
+                    ${pubDate}
+                </pubDate>
+                <content:encoded
+                    xmlns:content="${blogUrl}"
+                >
+                    <![CDATA[${item.html}]]>
+                </content:encoded>
+            </item>
+            `
+    }).join('');
+
     const template = `<?xml version="1.0" encoding="UTF-8" ?>
-    <rss version="2.0">
-    
+    <rss version="1.0">
     <channel>
         <title>
             <![CDATA[${blogTitle}]]>
@@ -41,23 +77,33 @@ const createRss = async () => {
             Jcamilofarfan
         </generator>
         <latBuildDate>
-
+            ${getDate()}
         </latBuildDate>
-        <atom:link href="${blogUrl}/rss.xml" rel="selft" type="application/rss+xml" />
+        <atom10:link
+            xmlns:atom10="${blogUrl}rss.xml"
+            rel="selft"
+            type="application/rss+xml"
+        />
         <ttl>60</ttl>
-
+        ${parseItems}
     </channel>
-    
     </rss>`
+    return template;
 }
 
-const writeFilePosts = (obj) => {
+const writeFilePosts = async (obj) => {
     const parseData = JSON.stringify(obj);
+    const rss = await createRss(obj);
     fd.writeFileSync('./src/routes/blog/_post.json', parseData);
+    console.log('Updated posts successfully');
+    fd.writeFileSync('./static/rss.xml', rss);
+    console.log('Update RSS file');
+
 }
 const writeFileTags = (obj) => {
     const parseData = JSON.stringify(obj);
     fd.writeFileSync('./src/routes/tags/_tags.json', parseData);
+    console.log('Updated tags successfully');
 }
 const fetchDataPosts = async () => {
     const response = await fetch(APIPOST);
@@ -91,6 +137,8 @@ const getTagsId = (tags) => {
             )
         }
     )
+    // agregar elemento a tagsId
+    tagsId.push('blog');
     return tagsId;
 }
 
@@ -115,7 +163,6 @@ const fetchDataTags = async () => {
 const fetchData = async () => {
     fetchDataTags();
     fetchDataPosts();
-    console.log('File written successfully');
 }
 
 fetchData();
