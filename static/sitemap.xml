@@ -2,25 +2,25 @@
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
                 <loc>https://blog.siscontables.dev/</loc>
-                <lastmod>15 Feb 2022 22:03:01</lastmod>
+                <lastmod>16-2-2022</lastmod>
                 <priority>1.0</priority>
             </url>
             
             <url>
                 <loc>https://blog.siscontables.dev/blog/rentas-naturales</loc>
-                <lastmod>15 Feb 2022 22:03:01</lastmod>
+                <lastmod>25-6-2021</lastmod>
                 <priority>0.80</priority>
             </url>
         
             <url>
                 <loc>https://blog.siscontables.dev/blog/bitcoin-en-el-salvador</loc>
-                <lastmod>15 Feb 2022 22:03:01</lastmod>
+                <lastmod>18-6-2021</lastmod>
                 <priority>0.80</priority>
             </url>
         
             <url>
                 <loc>https://blog.siscontables.dev/blog/sistemas-contables</loc>
-                <lastmod>15 Feb 2022 22:03:01</lastmod>
+                <lastmod>12-6-2021</lastmod>
                 <priority>0.80</priority>
             </url>
         

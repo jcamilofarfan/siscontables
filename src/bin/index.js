@@ -22,6 +22,13 @@ const getDate= (date) => {
         return new Date().toUTCString()
     }
 }
+const getDateSiteMap= (date)=>{
+    if(date){
+        return new Date(date).toLocaleDateString()
+    }else{
+        return new Date().toLocaleDateString()
+    }
+}
 
 
 const createRss = async (data) => {
@@ -96,7 +103,7 @@ const createSiteMap = async (data) => {
         return`
             <url>
                 <loc>${blogUrl}blog/${item.slug}</loc>
-                <lastmod>${getDate(item.createdAt)}</lastmod>
+                <lastmod>${getDateSiteMap(item.createdAt).replace(/\//g,'-')}</lastmod>
                 <priority>0.80</priority>
             </url>
         `
@@ -105,7 +112,7 @@ const createSiteMap = async (data) => {
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
                 <loc>${blogUrl}</loc>
-                <lastmod>${getDate()}</lastmod>
+                <lastmod>${getDateSiteMap().replace(/\//g, '-')}</lastmod>
                 <priority>1.0</priority>
             </url>
             ${parseItems}
@@ -138,7 +145,7 @@ const fetchDataPosts = async () => {
             "title": post.title,
             "html": post.html,
             "slug": post.slug,
-            "createdAt": post.created_at,
+            "createdAt": post.published_at,
             "id": post.id,
             "desc": post.excerpt,
             "tags": getTagsId(post.tags),
