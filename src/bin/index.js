@@ -23,11 +23,13 @@ const getDate= (date) => {
     }
 }
 const getDateSiteMap= (date)=>{
+    // formatera date a 2018-06-04
     if(date){
-        return new Date(date).toLocaleDateString()
+        date = new Date(date).toISOString().split('T')[0];
     }else{
-        return new Date().toLocaleDateString()
+        date = new Date().toISOString().split('T')[0]
     }
+    return date;
 }
 
 
@@ -103,7 +105,7 @@ const createSiteMap = async (data) => {
         return`
             <url>
                 <loc>${blogUrl}blog/${item.slug}</loc>
-                <lastmod>${getDateSiteMap(item.createdAt).replace(/\//g,'-')}</lastmod>
+                <lastmod>${getDateSiteMap(getDate(item.createdAt))}</lastmod>
                 <priority>0.80</priority>
             </url>
         `
@@ -112,7 +114,7 @@ const createSiteMap = async (data) => {
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
                 <loc>${blogUrl}</loc>
-                <lastmod>${getDateSiteMap().replace(/\//g, '-')}</lastmod>
+                <lastmod>${getDateSiteMap(getDate())}</lastmod>
                 <priority>1.0</priority>
             </url>
             ${parseItems}
