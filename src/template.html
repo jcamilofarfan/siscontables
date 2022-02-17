@@ -1,65 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="description" content="Blog Jcamilofarfan, software Developer and public Accountant"/>
-	<meta name="keywords" content="Jcamilofarfan, software Developer, public Accountant"/>
-	<meta name="author" content="Jcamilofarfan"/>
-	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:site" content="@jcamilofarfan"/>
-	<meta name="twitter:creator" content="@jcamilofarfan"/>
-	<meta name="twitter:title" content="Jcamilofarfan"/>
-	<meta name="twitter:description" content="Blog Jcamilofarfan, software Developer and public Accountant"/>
-	<meta name="twitter:image" content="https://i.imgur.com/YIqoLcY.png"/>
-	
-	<meta property="og:title" content="Jcamilofarfan"/>
-	<meta property="og:description" content="Blog Jcamilofarfan, software Developer and public Accountant"/>
-	<meta property="og:image" content="https://i.imgur.com/YIqoLcY.png"/>
-	<meta property="og:image:alt" content="Jcamilofarfan"/>
-	<meta property="og:url" content="https://blog.siscontables.dev/"/>
-	<meta property="og:site_name" content="Jcamilofarfan"/>
-	<meta property="og:locale" content="es_ES"/>
-	<meta property="og:type" content="article"/>
-	<meta property="fb:app_id" content="1085117785665000"/>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="theme-color" content="#333333">
+  <head>
+    <meta
+      name="description"
+      content="Blog Jcamilofarfan, software Developer and public Accountant"
+    />
+    <meta
+      name="keywords"
+      content="Jcamilofarfan, software Developer, public Accountant"
+    />
+    <meta name="author" content="Jcamilofarfan" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jcamilofarfan" />
+    <meta name="twitter:creator" content="@jcamilofarfan" />
+    <meta name="twitter:title" content="Jcamilofarfan" />
+    <meta
+      name="twitter:description"
+      content="Blog Jcamilofarfan, software Developer and public Accountant"
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/YIqoLcY.png" />
 
-	%sapper.base%
+    <meta property="og:title" content="Jcamilofarfan" />
+    <meta
+      property="og:description"
+      content="Blog Jcamilofarfan, software Developer and public Accountant"
+    />
+    <meta property="og:image" content="https://i.imgur.com/YIqoLcY.png" />
+    <meta property="og:image:alt" content="Jcamilofarfan" />
+    <meta property="og:url" content="https://blog.siscontables.dev/" />
+    <meta property="og:site_name" content="Jcamilofarfan" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="article" />
+    <meta property="fb:app_id" content="1085117785665000" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#333333" />
 
-	<link rel="stylesheet" href="global.css">
-	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-	<link rel="icon" type="image/png" href="192.png">
-	<link rel="apple-touch-icon" href="192.png">
+    %sapper.base%
 
-	<!-- Sapper creates a <script> tag containing `src/client.js`
+    <link rel="stylesheet" href="global.css" />
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+    <link rel="icon" type="image/png" href="192.png" />
+    <link rel="apple-touch-icon" href="192.png" />
+
+    <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
-	%sapper.scripts%
+    %sapper.scripts%
 
-		
-
-	<!-- Sapper generates a <style> tag containing critical CSS
+    <!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
-	%sapper.styles%
+    %sapper.styles%
 
-	<!-- This contains the contents of the <svelte:head> component, if
+    <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
-	%sapper.head%
-</head>
-<body>
-	<!-- The application will be rendered inside this element,
+    %sapper.head%
+  </head>
+  <body>
+    <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-	<div id="sapper">%sapper.html%</div>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TGV6Q3LRVH"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <div id="sapper">%sapper.html%</div>
 
-		gtag('config', 'G-TGV6Q3LRVH');
-	</script>
-</body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TGV6Q3LRVH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TGV6Q3LRVH");
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7985417719853572"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
