@@ -22,7 +22,7 @@
             Jcamilofarfan
         </generator>
         <latBuildDate>
-            Thu, 17 Feb 2022 20:43:29 GMT
+            Sat, 19 Feb 2022 15:32:12 GMT
         </latBuildDate>
         <atom10:link
             xmlns:atom10="https://blog.siscontables.dev/rss.xml"
@@ -109,10 +109,9 @@ llevar a cabo la contabilidad en las empresas por medio de herramientas de
 código abierto.
 
 Hola, Mi nombre es Juan Farfan
-Proyectos Recientes
-Me encanta aprender y enseñar por eso inicie con está estrategia transmedia la
-cual estará en las principales redes sociales creando contenido enfocado a
-estudiantes y profesionales en contabilidad, ]]>
+Hola Mi nombre es Juan Camilo, soy desarrollador de software y contador publico
+Tengo conocimientos en lenguajes de programación como JavaScript y Python
+manejando sus Frameworks para el BackEnd, además de conocimientos]]>
                 </description>
                 <category>
                     <![CDATA[Sistemas Contables]]>
@@ -123,7 +122,80 @@ estudiantes y profesionales en contabilidad, ]]>
                 <content:encoded
                     xmlns:content="https://blog.siscontables.dev/"
                 >
-                    <![CDATA[<p>Sistemas contables es una estrategia de educación financiera y contable con un toque de programación y desarrollo, donde buscamos nuevas formas de resolver y llevar a cabo la contabilidad en las empresas por medio de herramientas de código abierto.</p><h3 id="hola-mi-nombre-es-juan-farfan">Hola, Mi nombre es Juan Farfan</h3><h3 id="proyectos-recientes">Proyectos Recientes</h3><p>Me encanta aprender y enseñar por eso inicie con está estrategia transmedia la cual estará en las principales redes sociales creando contenido enfocado a estudiantes y profesionales en contabilidad, aportando formas innovadoras de realizar el trabajo, además de las constantes actualizaciones que se debe tener en la profesión, te agradecería que vieras mi contenido, me dejes un comentario y compartas mi contenido.</p><ul><li><a href="https://twitch.tv/siscontables" rel="noopener nofollow">Twitch – SisContables</a></li><li><a href="https://github.com/jcamilofarfan" rel="noopener nofollow">GitHub – @jcamilofarfan</a></li><li><a href="https://youtube.com/channel/UCP9HdiYMkLZ3YdqyFMOWF-w" rel="noopener nofollow">YouTube – Sistemas Contables</a></li><li><a href="https://twitter.com/jcamilofarfan" rel="noopener nofollow">Twitter – @jcamilofarfan</a></li><li><a href="https://www.linkedin.com/in/jcamilofarfan/" rel="noopener nofollow">Linkedin – Juan Camilo Farfan Juanias</a></li><li><a href="https://www.instagram.com/jcamilofarfan/" rel="noopener nofollow">Instagram – @jcamilofarfan</a></li></ul><h3 id="experiencia">Experiencia</h3><h3 id="cursos-realizados">Cursos Realizados</h3>]]>
+                    <![CDATA[<!--kg-card-begin: html--><style>
+:root{
+    --header-color: rgba(69, 142, 191, .2);
+    --footer-color: rgba(46, 95, 128, 1);
+}
+.profile-main-container{
+    align-items: center;
+}
+.profile-main-container .profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.grid-container{
+    margin: auto;
+}
+.jobs-main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h3{
+    border-bottom: 1px solid var(--footer-color);
+    text-align: center;
+}
+.courses-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.jobs-container{
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px dotted var(--footer-color);
+}
+.courses-container{
+    background-color: var(--header-color);
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid var(--footer-color);
+    padding: 15px;
+    margin: 5px;
+}
+.count-courses{
+    display: block;
+    font-size: 1.5em;
+    color: var(--footer-color);
+    text-align: center;
+}
+@media (max-width: 900px){
+    .courses-main-container{
+    grid-template-columns: 1fr;
+    }
+}
+</style><!--kg-card-end: html--><p>Sistemas contables es una estrategia de educación financiera y contable con un toque de programación y desarrollo, donde buscamos nuevas formas de resolver y llevar a cabo la contabilidad en las empresas por medio de herramientas de código abierto.</p><h3 id="hola-mi-nombre-es-juan-farfan">Hola, Mi nombre es Juan Farfan</h3><p>Hola Mi nombre es Juan Camilo, soy desarrollador de software y contador publico Tengo conocimientos en lenguajes de programación como JavaScript y Python manejando sus Frameworks para el BackEnd, además de conocimientos de áreas administrativas para las empresas Estoy en la capacidad de realizar funciones nuevas para diferentes proyectos de software, así como el mantenimiento de estos Recientemente trabaje en Canastto un Marketplace perteneciente a Unilever donde desarrolle funciones para la creación de campañas de publicidad al interior de la app, donde mejore en la escritura del código modular para su mejor entendimiento y realizar peticiones SQL de manera eficiente</p><h3 id="proyectos-recientes">Proyectos Recientes</h3><p>Me encanta aprender y enseñar por eso inicie con está estrategia transmedia la cual estará en las principales redes sociales creando contenido enfocado a estudiantes y profesionales en contabilidad, aportando formas innovadoras de realizar el trabajo, además de las constantes actualizaciones que se debe tener en la profesión, te agradecería que vieras mi contenido, me dejes un comentario y compartas mi contenido.</p><ul><li><a href="https://twitch.tv/jcamilofarfan">Twitch – jcamilofarfan</a></li><li><a href="https://github.com/jcamilofarfan" rel="noopener nofollow">GitHub – @jcamilofarfan</a></li><li><a href="https://www.youtube.com/channel/UCxCN-sqVFLgcTUuQUr_iFWw">YouTube – jcamilofarfan</a></li><li><a href="https://twitter.com/jcamilofarfan" rel="noopener nofollow">Twitter – @jcamilofarfan</a></li><li><a href="https://www.linkedin.com/in/jcamilofarfan/" rel="noopener nofollow">Linkedin – Juan Camilo Farfan Juanias</a></li><li><a href="https://www.instagram.com/jcamilofarfan/" rel="noopener nofollow">Instagram – @jcamilofarfan</a></li></ul><h3 id="experiencia">Experiencia</h3><!--kg-card-begin: html--><div class="profile-main-jobs">
+    <div class="grid-container">
+        <div class="jobs-main-container"><article class="jobs-container"><h5>Desarrollador de back-end en Canastto.com</h5><em>ago. 2021 - dic. 2021 · 5 meses</em><br><span>Recibir requerimientos para las nuevas funcionalidades y ejecución de los mantenimientos del api principal de la aplicación en BackEnd. Posteriormente realizar análisis y escritura del código bajo el lenguaje TypeScript, manejando bases de datos con TypeOrm y PostgreSQL; y finalmente pasar a QA para las pruebas correspondientes y una vez aprobado subirlo a producción en la nube de AWS a través del Frameworks Serverless
+-	Logros
+o	Diseñe una solución para trabajar y visualizar en diferentes sistemas operativos el proceso de desarrollo de software a través de Docker generando un correcto deployment 
+o	Investigué, aprendí e implementé un sistema de verificación de datos eficiente, de un solo String por medio de una expresión regular que arrojaba un formato predeterminado y necesario para el buen funcionamiento de la aplicación</span></article><article class="jobs-container"><h5>Referente Etnico en Alcaldia de Bogotá Secretaría Distrital de Ambiente</h5><em>mar. 2021 - dic. 2021 · 10 meses</em><br><span>Desde la secretaria distrital de ambiente, realice labores acordes a la cosmovisión y cosmogonía de los grupos étnicos residentes en Bogotá, durante la etapa laboral aporte en la creación de nuevas fichas pedagógicas, en las cuales se generó material didáctico tales como: 
+- videos – cuentos étnicos
+- SumaKausay – video de cosmovisión Étnico
+- Serenatas ambientales
+- Teatro de sombras
+- Origami
+- Arte con plastilina
+Los cuales fueron presentados a alumnos desde la primera infancia hasta grados superiores</span></article><article class="jobs-container"><h5>Auxiliar de nóminas en Grupo Logístico Empresarial</h5><em>sept. 2020 - ene. 2021 · 5 meses</em><br><span>"Grupo Logistico empresarial" es un grupo de empresas que brindan servicios especializados de Gestión Logística y Transporte.
+Me encargaba de preparación liquidación y registro de nomina de aproximadamente 250 personas al mes, generación de liquidaciones definitivas de contrato, configuración de sistema contable para causacion de nominas.</span></article><article class="jobs-container"><h5>Desarrollador en Cabildo Ambika Pijao</h5><em>sept. 2020 - dic. 2020 · 4 meses</em><br><span>Me encargue del desarrollo de la aplicación "Abeki Pijao" disponible en la Google Store, en el ambiente Unity, la cual contiene historias indígenas pijao de mi comunidad en la cual se resalta la identidad pijao, realizando talleres dinamicos con niños y niñas de primera infancia a quienes va dirigida la aplicacion.</span></article><article class="jobs-container"><h5>Notificador en Outsourcing S.A Oficial</h5><em>sept. 2019 - sept. 2020 · 1 año 1 mes</em><br><span>Me encargaba de notificar a las personas Victimas del conflito armado en Colombia sus resultados ante los procesos adelantados con la UARIV (Unidad para la Atención y Reparación Integral a las Víctimas), asi como la orientacion necesaria para los procesos con la unidad, participacion de campañas de notificacion masiva, generacion y encriptacion de archivos para notificacion via mail y preparacion de notificaciones via correo certificado.</span></article><article class="jobs-container"><h5>Auxiliar de departamento I en Bancolombia</h5><em>sept. 2018 - mar. 2019 · 7 meses</em><br><span>Me encargaba de liquidar facturas y cuentas de cobro con los impuestos correspondientes de acuerdo a la territorialidad, calidad de contribuyente, entre otros fatores requeridos por la ley de los negocios fiduciarios manejados por el Banco. Administracion y verificacion de RPA (automatización robótica de procesos) encargados de ingresar la informacion de las factureas e impuestos en los sistemas contables que maneja el Banco, asi como la recuperacion de informacion para la presentacion de informes del funcionamientoto de los RPA</span></article><article class="jobs-container"><h5>Auxiliar contable en Famiparaiso</h5><em>ene. 2018 - jun. 2018 · 6 meses</em><br><span>Famiparaiso Era una Ips (a la fecha se encuentra con matricula Cancelada) que prestaba sus servicio de Salud en los municipios de Pereira, Manizales y la Dorada.
+Me encargaba del control contable y financiero de la sede de Manizales, como lo es la legalizacion y control de gastos, preparacion de impuestos municipales y demas obligaciones tributarias como lo es la "Informacion exogena Municipal", liquidacion de Nominas y cuentas de cobro de los Profesionales.</span></article><article class="jobs-container"><h5>Gestor Cultural en Cabildo Ambika Pijao</h5><em>abr. 2017 - feb. 2018 · 11 meses</em><br><span>Me encargaba de la sistematización de información, realización de caracterización indígena , dirección de talleres encaminados a la identidad propia del pueblo pijao, realización de convocatorias, toma de evidencia audiovisual y asistencia, organización y depuración de datos, ademas de la dinamizacion de talleres dirigida a niños y niñas del cabildo desde las edades de 5 años hasta los 14, realizando talleres de artesania, y cultura propia</span></article><article class="jobs-container"><h5>Aprendiz en ComputerShop</h5><em>jul. 2015 - dic. 2015 · 6 meses</em><br><span>Realización de soporte preventivo y correctivo equipos Sena, inventario de equipos, instalación de Sistemas Operativos, instalación de impresoras entre otras actividades relacionadas con el Apóyo de soporte en Sitio y mesa de Ayuda</span></article></div>
+    </div>
+</div><!--kg-card-end: html--><h3 id="cursos-realizados">Cursos Realizados</h3><!--kg-card-begin: html--><div class="profile-main-courses">
+    <div class="grid-container">
+        <span class="count-courses">Se muestran  20 Cursos para mas puede visitar mi perfil de <a href="https://platzi.com/p/jcamilofarfan/" target="_blank">Platzi</a></span>
+        <div class="courses-main-container"><article class="courses-container"><h6>Curso de Desarrollo Web con Svelte y Sapper</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1972-svelte-sapper-practico/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Programación Orientada a Objetos: POO</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1474-course/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Introducción al Pensamiento Computacional con Python</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1764-python-cs/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Python Intermedio: Comprehensions, Lambdas y Manejo de Errores</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2255-python-intermedio/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso para Encontrar y Evaluar Ideas para Emprender</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2492-startups-ideas/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso Básico de Python</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1937-course/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Creación de Blogs con WordPress</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2534-wordpress-blog/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Introducción a la Terminal y Línea de Comandos</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2292-course/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Introducción al Desarrollo Backend</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2508-course/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Tecnología para Gerentes y Directores</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1882-course/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>JS Challenge: Diploma de la Fase 2</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2610-jschallenge-fase2/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Backend con Node.js: API REST con Express.js</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2485-backend-nodejs/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Oratoria para Hablar en Público</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1285-hablar-en-publico/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de  Prework: Configuración de Entorno de Desarrollo en Linux</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2383-course/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Backend con Node.js 2019</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1646-course/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Fundamentos de Bases de Datos</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1566-bd/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Fundamentos de Node.js</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1759-fundamentos-node/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Curso de Gestión de Dependencias y Paquetes con NPM</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1763-npm/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>Introducción a la Creación de Empresas y Startups</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/1186-creacion-de-empresas/diploma/detalle/" target="_blank">Ver certificado</a></article><article class="courses-container"><h6>JS Challenge: FrontEnd</h6><a class="blogs-button" href="https://platzi.com/p/jcamilofarfan/curso/2503-jschallenge-fase1/diploma/detalle/" target="_blank">Ver certificado</a></article></div>
+    </div>
+</div><!--kg-card-end: html-->]]>
                 </content:encoded>
             </item>
             

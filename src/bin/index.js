@@ -1,6 +1,5 @@
 const fetch = require('node-fetch');
 const fd = require('fs');
-// let postsObj = require('../routes/blog/_post.json');
 require('dotenv').config();
 
 const APIPOST = process.env.API_WORDPRESS_POSTS;
@@ -14,6 +13,7 @@ const blogAuthor = process.env.BLOG_AUTHOR
 const blogFavicon = process.env.BLOG_FAVICON
 
 let tagsDB = [];
+let postSisContables = {}
 
 const getDate= (date) => {
     if(date){
@@ -23,7 +23,6 @@ const getDate= (date) => {
     }
 }
 const getDateSiteMap= (date)=>{
-    // formatera date a 2018-06-04
     if(date){
         date = new Date(date).toISOString().split('T')[0];
     }else{
@@ -31,8 +30,6 @@ const getDateSiteMap= (date)=>{
     }
     return date;
 }
-
-
 const createRss = async (data) => {
     const parseItems = await data.map(item=>{
         const pubDate = getDate(item.createdAt);
@@ -99,7 +96,6 @@ const createRss = async (data) => {
     </rss>`
     return template;
 }
-
 const createSiteMap = async (data) => {
     const parseItems = await data.map(item=>{
         return`
@@ -122,7 +118,6 @@ const createSiteMap = async (data) => {
     `
     return template
 }
-
 const writeFilePosts = async (obj) => {
     const parseData = JSON.stringify(obj);
     const rss = await createRss(obj);
@@ -150,14 +145,17 @@ const fetchDataPosts = async () => {
             "createdAt": post.published_at,
             "id": post.id,
             "desc": post.excerpt,
-            "tags": getTagsId(post.tags),
+            "tags": getTagsName(post.tags),
             "image": post.feature_image
         }
     });
+    postSisContables = posts.filter(post => {
+        return post.title === 'Sistemas Contables'
+    })
+    // console.log(postSisContables);
     writeFilePosts(posts)
 }
-// buscar nombre de tags por id
-const getTagsId = (tags) => {
+const getTagsName = (tags) => {
     let tagsName = [];
     tags.map(tag => {
         tagsName.push(
@@ -166,7 +164,6 @@ const getTagsId = (tags) => {
     })
     return tagsName;
 }
-
 const fetchDataTags = async () => {
     const response = await fetch(APITAGS);
     const data = await response.json();
@@ -182,11 +179,8 @@ const fetchDataTags = async () => {
     tagsDB = tags;
     writeFileTags(tags)
 }
-
-
 const fetchData = async () => {
     fetchDataTags();
     fetchDataPosts();
 }
-
 fetchData();
