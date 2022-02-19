@@ -42,12 +42,13 @@
 </svelte:head>
 
 <div class="Home">
+	<h3>Últimos artículos</h3>
 	<div class="Posts">
 		{#each posts as post}
 			<Post {post}/>
 		{/each}
 	</div>
-	<h1>Artículos por temas</h1>
+	<h3>Artículos por temas</h3>
 	<div class="Tags-container">
 	  {#each tags as tag}
 		<Tags {tag}/>
