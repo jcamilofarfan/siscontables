@@ -22,7 +22,7 @@
             Jcamilofarfan
         </generator>
         <latBuildDate>
-            Sat, 19 Feb 2022 15:32:12 GMT
+            Thu, 17 Mar 2022 22:01:55 GMT
         </latBuildDate>
         <atom10:link
             xmlns:atom10="https://blog.siscontables.dev/rss.xml"
@@ -31,6 +31,36 @@
         />
         <ttl>60</ttl>
         
+            <item>
+                <title>
+                    <![CDATA[La influencia de la programación en la contabilidad]]>
+                </title>
+                <link>
+                    https://blog.siscontables.dev/blog/programacion-y-contabilidad
+                </link>
+                <description>
+                    <![CDATA[En los últimos años, el desarrollo de software ha venido creciendo a pasos
+agigantados que ha llegado a imponerse en la mayor parte de las industrias y
+tareas cotidianas, un ejemplo de esto puede ser una de tantas aplicaciones que
+usamos día tras día bien sea una aplicación desde el celular o un portal web e
+incluso las aplicaciones que no podemos ver, como los sistemas de transporte en
+los cuales con una tarjeta pagamos por un servicio.
+
+Un ejemplo más común en donde se ven estos sistemas son l]]>
+                </description>
+                <category>
+                    <![CDATA[Contabilidad,Programación]]>
+                </category>
+                <pubDate>
+                    Thu, 17 Mar 2022 21:59:42 GMT
+                </pubDate>
+                <content:encoded
+                    xmlns:content="https://blog.siscontables.dev/"
+                >
+                    <![CDATA[<p>En los últimos años, el desarrollo de software ha venido creciendo a pasos agigantados que ha llegado a imponerse en la mayor parte de las industrias y tareas cotidianas, un ejemplo de esto puede ser una de tantas aplicaciones que usamos día tras día bien sea una aplicación desde el celular o un portal web e incluso las aplicaciones que no podemos ver, como los sistemas de transporte en los cuales con una tarjeta pagamos por un servicio.</p><p>Un ejemplo más común en donde se ven estos sistemas son las compras donde los productos pasan por medio de un lector de códigos de barra llegan a un  PC o una tableta en los cuales los datos ingresan y son enviados a un software, hay se inicia todo un proceso contable, de registro y análisis, esto sin importar si es un pequeño negocio con un sencillo manejo de inventario o grandes cadenas de restaurantes o supermercados, por lo cual hace que sean tan relacionadas entre sí, puesto que la programación y contabilidad son dos áreas de las ciencias exactas que tienen una influencia significativa en la vida de las personas. La programación es la ciencia que estudia la forma en que se pueden representar problemas y soluciones en un lenguaje de computadora. La contabilidad, por otro lado, es la ciencia que estudia el patrimonio de una persona o entidad y la manera en que se pueden registrar y controlar las operaciones económicas de esta.</p><p>Ambas áreas son fundamentales para el funcionamiento de la economía de un país. La programación permite que los ordenadores realicen tareas repetitivas y complejas, lo que reduce el costo de producción de bienes y servicios así como el registro de datos, transformación y análisis para la generación de utilidad y crecimiento.</p><p>Esto hace que la influencia de la programación en la contabilidad sea cada vez mayor. Los ordenadores pueden ejecutar tareas repetitivas de contabilidad con mayor rapidez y eficiencia que las personas, lo que reduce los costos de producción y análisis. Además, los ordenadores pueden analizar grandes cantidades de datos contables de forma automática, lo que permite tomar decisiones económicas más inteligentes.</p><p>Mientras que la contabilidad es uno de los campos más importantes en las operaciones diarias, sin importar la industria, por eso muchos lenguajes de programación tienen funciones que permiten la representación de problemas contables de manera cada vez más sencilla. Esto facilita la creación de programas que resuelven problemas contables de manera automática.</p><p>Por tal motivo el nacimiento de sistemas de control empresarial, uno de los más conocidos SAP que permite no solo el manejo de información financiera, sino que también se usa para el manejo de clientes entre otras funciones, siesta uno de los sistemas de manejo más automático permitiendo hacer integraciones de manera más ágil con sistemas propios, permitiendo el envío y la obtención de datos.</p><p>Pero en la industria del software contable o de manejo empresarial, los profesionales encargados de su desarrollo, son eso precisamente "desarrolladores" cuyo formación es basada en escribir líneas de código y generación de algoritmos eficientes, por lo cual muchos no conocen los verdaderos problemas que surgen en la labor contable día con día. Para ser más exactos y teniendo como referencia Colombia uno de los países latinoamericanos con un número de Pymes "familiares"  bastante alto, cuyos gerentes manejan la empresa con el mismo bolsillo que sus ámbitos personales, haciendo que se generen costos y gastos no aplicables a la razón social de las empresas, donde el contador previo al ingreso de la información debe realizar una precisa preselección de datos, o más aún la constante rotación de empleados de las organizaciones cuya información debe ser cargado en más de un software para poder tener control y realizar los pagos correspondientes, lo cual y al no tener estos problemas en mente se genera software rígido y poco personalizable en el cual llevar un control se vuelve una tarea monótona.</p><p>Por eso la importancia de la participación activa de profesionales del área con la experiencia apropiada para validar los posibles problemas y la cotidianidad de la labor contable, permitiendo una mayor personalización del software o un mayor ajuste del mismo</p>]]>
+                </content:encoded>
+            </item>
+            
             <item>
                 <title>
                     <![CDATA[Rentas Naturales]]>
