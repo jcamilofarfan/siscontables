@@ -1,0 +1,31 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+    push:
+    branches:
+      - main
+    workflow_dispatch:
+    schedule:
+      - cron: "0 1 * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '16'
+    - run: npm install
+    - run: npm run data
+    - run: |
+        git config user.name jcamilofarfan
+        git config user.email farfan1976@hotmail.com
+        git add .
+        git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update data tags and articles"
+        git push origin main
