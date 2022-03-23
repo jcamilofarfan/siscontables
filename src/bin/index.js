@@ -5,12 +5,16 @@ require('dotenv').config();
 const APIPOST = process.env.API_WORDPRESS_POSTS;
 const APITAGS = process.env.API_WORDPRESS_TAGS;
 
+const APIPHANTOM = process.env.API_PHANTOM;
+
 const blogTitle = process.env.BLOG_TITLE
 const blogUrl = process.env.BLOG_URL
 const blogCover = process.env.BLOG_COVER
 const blogDesc = process.env.BLOG_DESC
 const blogAuthor = process.env.BLOG_AUTHOR
 const blogFavicon = process.env.BLOG_FAVICON
+
+
 
 let tagsDB = [];
 let postSisContables = {}
@@ -134,6 +138,11 @@ const writeFileTags = (obj) => {
     fd.writeFileSync('./src/routes/tags/_tags.json', parseData);
     console.log('Updated tags successfully');
 }
+const writeFileLinkedin = (obj) =>{
+    const parseData = JSON.stringify(obj);
+    fd.writeFileSync('./src/routes/about/_about.json', parseData);
+    console.log('Updated linkedin successfully');
+}
 const fetchDataPosts = async () => {
     const response = await fetch(APIPOST);
     const data = await response.json();
@@ -154,6 +163,12 @@ const fetchDataPosts = async () => {
     })
     // console.log(postSisContables);
     writeFilePosts(posts)
+}
+
+const fetchDataLinkedin = async () =>{
+    const response = await fetch(APIPHANTOM);
+    const data = await response.json();
+    writeFileLinkedin(data)
 }
 const getTagsName = (tags) => {
     let tagsName = [];
@@ -182,5 +197,6 @@ const fetchDataTags = async () => {
 const fetchData = async () => {
     fetchDataTags();
     fetchDataPosts();
+    fetchDataLinkedin();
 }
 fetchData();
