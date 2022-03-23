@@ -22,7 +22,7 @@
             Jcamilofarfan
         </generator>
         <latBuildDate>
-            Wed, 23 Mar 2022 02:28:37 GMT
+            Wed, 23 Mar 2022 15:08:18 GMT
         </latBuildDate>
         <atom10:link
             xmlns:atom10="https://blog.siscontables.dev/rss.xml"
@@ -31,6 +31,35 @@
         />
         <ttl>60</ttl>
         
+            <item>
+                <title>
+                    <![CDATA[Automatización de procesos]]>
+                </title>
+                <link>
+                    https://blog.siscontables.dev/blog/automatizacion-de-procesos
+                </link>
+                <description>
+                    <![CDATA[En la actualidad con el cambio constante de la información, las tareas
+repetitivas es importante poder automatizar procesos, puesto que hay tareas que
+deben realizarse a diario, pero son tareas tan comunes que pueden ser
+automatizadas.Por ejemplo, una tarea común en el área de contabilidad, es el
+ingreso de datos de las facturas. Si se tiene una gran cantidad de datos, esta
+tarea puede ser muy tediosa y repetitiva. En este caso, se pueden utilizar
+técnicas de automatización de tareas para hacer ]]>
+                </description>
+                <category>
+                    <![CDATA[Contabilidad,Programación]]>
+                </category>
+                <pubDate>
+                    Wed, 23 Mar 2022 03:36:45 GMT
+                </pubDate>
+                <content:encoded
+                    xmlns:content="https://blog.siscontables.dev/"
+                >
+                    <![CDATA[<p>En la actualidad con el cambio constante de la información, las tareas repetitivas es importante poder automatizar procesos, puesto que hay tareas que deben realizarse a diario, pero son tareas tan comunes que pueden ser automatizadas.Por ejemplo, una tarea común en el área de contabilidad, es el ingreso de datos de las facturas. Si se tiene una gran cantidad de datos, esta tarea puede ser muy tediosa y repetitiva. En este caso, se pueden utilizar técnicas de automatización de tareas para hacer que el proceso sea más eficiente.Una técnica de automatización de tareas es la creación de macros.</p><p>Una macro es un conjunto de instrucciones que se pueden grabar y ejecutar repetidamente. Por ejemplo, si se ingresan los datos de las facturas manualmente, se puede crear una macro para automatizar este proceso. La macro se grabaría en un software especializado y se ejecutaría cada vez que se necesite ingresar los datos de las facturas. De esta forma, se ahorra tiempo y se evita la introducción de errores humanos.Otra técnica de automatización de tareas es el uso de software especializado.</p><p>Hay muchos programas de computadora que pueden automatizar tareas comunes. Por ejemplo, existen programas de contabilidad que pueden ingresar y procesar los datos de las facturas automáticamente. También hay programas de correo electrónico que pueden enviar y recibir mensajes automáticamente. Estos programas pueden hacer que el trabajo sea más eficiente y evitar errores humanos.En general, la automatización de tareas es una forma eficiente de mejorar la productividad y evitar errores humanos. Se debe tener cuidado, sin embargo, no hay que  automatizar tareas que requieren el juicio humano o la creatividad. La automatización de tareas no reemplaza al trabajador, sino que lo ayuda a realizar su trabajo de forma más eficiente.</p><p>La obtención de datos que cambian a diario es otro proceso que es posible y seria una buena practica ya que el llega un momento en que el usuario necesita una actualización de datos se puede hacer con unas lineas de codigo</p><p>‌                              <code>const axios = require('axios'); const fs = require('fs'); const URL = 'https://www.datos.gov.co/resource/mcec-87by.json';  const getDolar = async () =&gt; {     const response = await axios.get(URL);     const dolar = response.data[0].valor;     const fecha = response.data[0].vigenciahasta;     console.log(`El dolar hoy es: ${dolar}`);     console.log(`Fecha: ${fecha}`);     // guardar los datos en un .json     fs.writeFile('./dolar.json', JSON.stringify(response.data), (err) =&gt; {         if (err) throw err;         console.log('The file has been saved!');     }); } getDolar();</code></p><p>En el anterior código de realiza la petición a la api pública de los datos en Colombia, consiguiendo los datos de la TRM del dólar, esta acción se debería hacer todos los días para poder tener estados financieros en USD, también se puede hacer cuando se generan informes y por otro proceso de automatización pasar cada uno de los movimientos a la moneda extranjera, esto lo puede programar bien sea el proveedor tecnológico o la persona encargada de la contabilidad, con el fin de apoyar la labor</p><p>En la programación esta práctica de automatización se usa bastante en el CI/CD con el fin de realizar test y verificar que antes de hacer deploy todo funcione correctamente.</p><p>En fin está práctica es muy útil para muchas industrias y procesos ayudando a evitar errores humanos y agilizando las tareas repetitivas permitiendo a las personas enfocarse en tareas de análisis y creatividad.</p>]]>
+                </content:encoded>
+            </item>
+            
             <item>
                 <title>
                     <![CDATA[La influencia de la programación en la contabilidad]]>

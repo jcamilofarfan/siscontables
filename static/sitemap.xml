@@ -7,6 +7,12 @@
             </url>
             
             <url>
+                <loc>https://blog.siscontables.dev/blog/automatizacion-de-procesos</loc>
+                <lastmod>2022-03-23</lastmod>
+                <priority>0.80</priority>
+            </url>
+        
+            <url>
                 <loc>https://blog.siscontables.dev/blog/programacion-y-contabilidad</loc>
                 <lastmod>2022-03-17</lastmod>
                 <priority>0.80</priority>
