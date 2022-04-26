@@ -1,7 +1,5 @@
 import about from './_about.json';
 
-// console.log(aboutGeneral.length);
-console.log(typeof about);
 const contents = JSON.stringify(about.map(aboutmin =>{
     return {
         general: aboutmin.general,
