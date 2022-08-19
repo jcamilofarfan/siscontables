@@ -143,27 +143,27 @@ const writeFileLinkedin = (obj) =>{
     fd.writeFileSync('./src/routes/about/_about.json', parseData);
     console.log('Updated linkedin successfully');
 }
-const fetchDataPosts = async () => {
-    const response = await fetch(APIPOST);
-    const data = await response.json();
-    const posts = await data.posts.map(post => {
-        return {
-            "title": post.title,
-            "html": post.html,
-            "slug": post.slug,
-            "createdAt": post.published_at,
-            "id": post.id,
-            "desc": post.excerpt,
-            "tags": getTagsName(post.tags),
-            "image": post.feature_image
-        }
-    });
-    postSisContables = posts.filter(post => {
-        return post.title === 'Sistemas Contables'
-    })
-    // console.log(postSisContables);
-    writeFilePosts(posts)
-}
+// const fetchDataPosts = async () => {
+//     const response = await fetch(APIPOST);
+//     const data = await response.json();
+//     const posts = await data.posts.map(post => {
+//         return {
+//             "title": post.title,
+//             "html": post.html,
+//             "slug": post.slug,
+//             "createdAt": post.published_at,
+//             "id": post.id,
+//             "desc": post.excerpt,
+//             "tags": getTagsName(post.tags),
+//             "image": post.feature_image
+//         }
+//     });
+//     postSisContables = posts.filter(post => {
+//         return post.title === 'Sistemas Contables'
+//     })
+//     // console.log(postSisContables);
+//     writeFilePosts(posts)
+// }
 
 const fetchDataLinkedin = async () =>{
     const response = await fetch(APIPHANTOM);
