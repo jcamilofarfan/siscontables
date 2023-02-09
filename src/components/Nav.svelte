@@ -79,9 +79,9 @@
         <ul>
           <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
           <li><a aria-current="{segment === 'tags' ? 'page' : undefined}" href="tags">Tags</a></li>
-          <li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
-          <li><a aria-current="{segment === 'contact' ? 'page': undefined}" href="contact">contact</a></li>
-          <li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+          <li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
+          <li><a aria-current="{segment === 'contact' ? 'page': undefined}" href="contact">Contact</a></li>
+          <li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Blog</a></li>
         </ul>
       </div>
     </div>
