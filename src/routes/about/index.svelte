@@ -21,7 +21,8 @@
 
 <style>
   .img_perfil{
-    width: 100px;
+    border-radius: 50%;
+    width: 100%;
   }
   .container{
     display: grid;
@@ -34,7 +35,7 @@
   }
   .container_resume{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
   }
