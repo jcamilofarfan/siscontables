@@ -26,6 +26,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  h3{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: large;
+  }
 </style>
 
 <svelte:head>
