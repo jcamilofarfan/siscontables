@@ -35,7 +35,7 @@
   }
   .container_resume{
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 20px;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
