@@ -3,7 +3,7 @@
 </script>
 <style>
     .img_school{
-        width: 100%;
+        height:40px;
     }
     .container{
         display: grid;
