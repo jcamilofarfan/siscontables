@@ -14,7 +14,18 @@
   }
   export let about;
   import CardScholl from "../../components/CardScholl.svelte";
+  import LicencesCard from "../../components/LicencesCard.svelte";
 </script>
+
+<style>
+  .img_perfil{
+    width: 100px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+</style>
 
 <svelte:head>
   <title>About</title>
@@ -22,7 +33,7 @@
 
 <div class="About">
   <h1>About Juan Camilo Farfan</h1>
-  <img src={about[0].general.imgUrl} alt="jcamilofarfan" />
+  <img class="img_perfil" src={about[0].general.imgUrl} alt="jcamilofarfan" />
   <p>{about[0].general.headline}</p>
   <h3>Quien Soy?</h3>
   <p>{about[0].general.description}</p>
@@ -39,17 +50,15 @@
     {/each}
   </ul>
   <h3>Educacion</h3>
-  <ul>
+  <div>
     {#each about[0].schools as school}
       <CardScholl {school}/>
     {/each}
-  </ul>
+  </div>
   <h3>Cursos</h3>
-  <ul>
+  <div class="container">
     {#each about[0].licences as licence}
-      <li>
-        {licence.name}
-      </li>
+      <LicencesCard {licence}/>
     {/each}
-  </ul>
+  </div>
 </div>
