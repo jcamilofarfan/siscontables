@@ -16,6 +16,7 @@
   import CardSchool from "../../components/CardSchool.svelte";
   import LicencesCard from "../../components/LicencesCard.svelte";
   import CardSkill from "../../components/CardSkill.svelte";
+  import CardJobs from "../../components/CardJobs.svelte";
 </script>
 
 <style>
@@ -50,11 +51,11 @@
     {/each}
   </div>
   <h3>Experiencia</h3>
-  <ul>
+  <div>
     {#each about[0].jobs as job}
-      <li>{job.jobTitle}</li>
+      <CardJobs {job} />
     {/each}
-  </ul>
+  </div>
   <h3>Educacion</h3>
   <div>
     {#each about[0].schools as school}
