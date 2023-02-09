@@ -32,6 +32,12 @@
     font-weight: 500;
     font-size: large;
   }
+  .container_resume{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
 
 <svelte:head>
@@ -39,11 +45,17 @@
 </svelte:head>
 
 <div class="About">
-  <h1>About Juan Camilo Farfan</h1>
-  <img class="img_perfil" src={about[0].general.imgUrl} alt="jcamilofarfan" />
+  <h1>Juan Camilo Farfan</h1>
   <p>{about[0].general.headline}</p>
-  <h3>Quien Soy?</h3>
-  <p>{about[0].general.description}</p>
+  <div class="container_resume">
+    <div class="container_img">
+      <img class="img_perfil" src={about[0].general.imgUrl} alt="jcamilofarfan" />
+    </div>
+    <div class="container_info">
+      <h3>Quien Soy?</h3>
+      <p>{about[0].general.description}</p>
+    </div>
+  </div>
   <h3>Habilidades</h3>
   <div>
     {#each about[0].skills as skill}
