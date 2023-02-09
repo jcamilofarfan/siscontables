@@ -13,6 +13,7 @@
     i.src = 'javascript:document.write("<iframe src=\\"'+u+'\\" style=\\"width:100%;height:100%;border:0\\"></iframe>");';
   }
   export let about;
+  import CardScholl from "../../components/CardScholl.svelte";
 </script>
 
 <svelte:head>
@@ -40,7 +41,7 @@
   <h3>Educacion</h3>
   <ul>
     {#each about[0].schools as school}
-      <li>{school.schoolName}</li>
+      <CardScholl {school}/>
     {/each}
   </ul>
   <h3>Cursos</h3>
