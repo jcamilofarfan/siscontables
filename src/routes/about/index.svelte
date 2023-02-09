@@ -13,7 +13,7 @@
     i.src = 'javascript:document.write("<iframe src=\\"'+u+'\\" style=\\"width:100%;height:100%;border:0\\"></iframe>");';
   }
   export let about;
-  import CardScholl from "../../components/CardScholl.svelte";
+  import CardSchool from "../../components/CardSchool.svelte";
   import LicencesCard from "../../components/LicencesCard.svelte";
 </script>
 
@@ -52,7 +52,7 @@
   <h3>Educacion</h3>
   <div>
     {#each about[0].schools as school}
-      <CardScholl {school}/>
+      <CardSchool {school}/>
     {/each}
   </div>
   <h3>Cursos</h3>
