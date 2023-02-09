@@ -16,6 +16,7 @@
         ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     .container {
+        border-radius:10px;
         display: inline-flex;
         margin: 5px;
         border: 1px solid black;
