@@ -15,6 +15,7 @@
   export let about;
   import CardSchool from "../../components/CardSchool.svelte";
   import LicencesCard from "../../components/LicencesCard.svelte";
+  import CardSkill from "../../components/CardSkill.svelte";
 </script>
 
 <style>
@@ -38,11 +39,11 @@
   <h3>Quien Soy?</h3>
   <p>{about[0].general.description}</p>
   <h3>Habilidades</h3>
-  <ul>
+  <div>
     {#each about[0].skills as skill}
-      <li>{skill.name}</li>
+      <CardSkill {skill}/>
     {/each}
-  </ul>
+  </div>
   <h3>Experiencia</h3>
   <ul>
     {#each about[0].jobs as job}
